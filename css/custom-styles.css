@@ -177,6 +177,7 @@ p {
 #careerDesktop2 {
 	font-weight: 900;
 	font-size: 6rem;
+	margin-left: .5em;
 	display: inline-block;
 	white-space: nowrap;
 }
