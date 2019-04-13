@@ -1,0 +1,317 @@
+body {
+	background-color: black;
+	color: white;
+	background-image: url("../images/abstract.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/**background-attachment: fixed;**/
+	z-index: -1;
+	/** 100vh; 100% of the height and will cover the 100% of viewport  **/
+	/*overflow: hidden;*/
+	min-height: 100vh;
+	height: 100%;
+}
+
+.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+main {
+	/* height of page */
+	min-height: calc(100vh - 10rem);
+}
+
+.nav-wrapper {
+	height: 4em;
+}
+
+#HOME {}
+
+#ABOUTME {
+	display: none;
+}
+
+#ABOUTME blockquote,
+p {
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+
+#ABOUTME blockquote {
+	border-left-color: #13A4C1;
+}
+
+#ABOUTME blockquote a {
+	text-decoration: none;
+	color: white;
+	font-style: italic
+}
+
+#ABOUTME blockquote a:hover {
+	color: red;
+}
+
+#meImage {
+	float: right;
+	margin: 0 0 1em 2em;
+}
+
+#PROJECTS {
+	display: none;
+	margin: 0px;
+}
+
+#PROJECTS ul {
+	margin-bottom: 1em;
+}
+
+#PROJECTS p {
+	font-size: 1.1rem;
+	line-height: 2rem;
+}
+
+.tabs .tab a.active {
+	background-color: transparent;
+	color: #13A4C1;
+}
+
+.tabs .indicator {
+	background-color: #11548B
+}
+
+.tabs .tab a:hover {
+	color: #11548B !important;
+}
+
+.tabs .tab a {
+	color: black !important;
+}
+
+.tabs .tab a.active {
+	background-color: #13A4C1;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+	background-color: #13A4C1;
+	color: #11548B;
+	opacity: 1;
+}
+
+#videoDemo {
+	max-height: 80vh;
+	
+}
+
+
+#CONTACTS {
+	display: none;
+}
+
+
+#CONTACTS p {
+	font-size: 2.2rem;
+	line-height: 2rem;
+	
+}
+
+
+#contacts {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#mobileNav a {
+	font-size: 1em;
+}
+
+#navSiteLinks {}
+
+#linkSubHeader a {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none !important;
+}
+
+#emailLink {
+	text-decoration: none !important;
+	color: white;
+}
+
+#navLinks li {
+	margin-bottom: 1em;
+}
+
+#navResume {
+	margin-left: 0.3em;
+}
+
+#mainMobile {
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#nameDesktop {
+	font-size: 2.5rem;
+	display: inline-block;
+	font-weight: 400;
+	cursor: default;
+}
+
+#careerDesktop1 {
+	font-weight: 900;
+	font-size: 6rem;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#careerDesktop2 {
+	font-weight: 900;
+	font-size: 6rem;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#careerDesktopSection {
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#careerMobile1 {
+	font-size: 3rem;
+	font-weight: 900;
+	display: inline;
+	white-space: nowrap;
+}
+
+#careerMobile2 {
+	margin-left: .5em;
+	line-height: 4.5rem;
+	font-size: 3rem;
+	font-weight: 900;
+	display: inline;
+	white-space: nowrap;
+}
+
+
+#nameMobile {
+	font-size: 2rem;
+}
+
+#navMenu {
+	display: inline !important;
+}
+
+#navMenu li a {
+	font-size: 1.3rem;
+}
+
+#videoActions {
+	margin-bottom: 1em;
+}
+
+#appLinks a img {
+	margin-left: 1em;
+	margin-bottom: .5em;
+}
+
+#appLinks a {
+	margin-bottom: .5em;
+	padding-bottom: 0;
+}
+
+#app1 a {
+	margin: .5em;
+}
+
+#app2 a {
+	margin: .5em;
+}
+
+footer {
+	height: 5em;
+}
+
+#footerList li {
+	display: inline;
+	margin-left: 1.5em;
+}
+
+#footerList {
+	margin-top: 0;
+}
+
+#resume {
+	margin-bottom: 0.1em;
+}
+
+
+#copyright {
+	margin-top: 0.5em;
+	font-size: 1em;
+}
+
+nav li a:hover {
+	color: red;
+	opacity: 0.9 !important;
+}
+
+footer input:hover {
+	opacity: 0.5 !important;
+}
+
+/* Styles for animation */
+.animate {
+	position: relative;
+}
+
+.animate .letter {
+	font-weight: 900;
+	transform-origin: 50% 100%;
+	display: inline-block;
+	line-height: 1em;
+}
+
+/** change widths for mobile **/
+@media only screen and (max-width: 500px) {
+	#tabs a  {
+		font-size: .7em;
+		padding: 0;
+	}
+
+	#ABOUTME blockquote,
+	p {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+
+	#CONTACTS p {
+		font-size: 1.7em;
+	}
+
+}
+
+/** change widths for mobile **/
+@media only screen and (max-width: 400px) {
+	#CONTACTS p {
+		font-size: 1.2em;
+	}
+
+	#careerMobile2 {
+		margin-left: 0;
+	}
+
+}

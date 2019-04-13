@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./node_modules/materialize-css/dist/css/materialize.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom-styles.css" />
+	<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script src="./node_modules/animejs/lib/anime.min.js"></script>
+
+	<title>Portfolio</title>
+
+</head>
+
+<body>
+
+	<header>
+		<!-- Desktop Navbar -->
+
+		<nav class="nav-wrapper black">
+			<div class="container hide-on-med-and-down">
+				<!-- Nav for Large Screen -->
+				<a id="nameDesktop">Travis Tackett</a>
+
+				<ul class="right hide-on-med-and-down" id="navMenu">
+					<li><a class="homeTab">Home</a></li>
+					<li><a class="aboutMeTab">About Me</a></li>
+					<li><a class="projectsTab">Projects</a></li>
+					<li><a class="contactsTab">Contact</a></li>
+				</ul>
+			</div>
+			<a data-target="slide-out" class="sidenav-trigger"><b><i id="menu" class="material-icons">menu</i></a>
+		</nav>
+	</header>
+
+	<!-- Mobile Navbar -->
+	<ul id="slide-out" class="sidenav mobileNav hide-on-large-only">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="images/abstract-mini.jpg" />
+				</div>
+				<a><span id="nameMobile" class="white-text"><b>Travis Tackett</b></span></a>
+				<a href="mailto:travisetackett@gmail.com">
+					<span class="white-text email"><b>travisetackett@gmail.com</b></span>
+				</a>
+			</div>
+		</li>
+		<div id="navSiteLinks">
+			<ul>
+				<li>
+					<a class="homeTab"><b>Home</b></a>
+				</li>
+				<li>
+					<a class="aboutMeTab"><b>About Me</b></a>
+				</li>
+				<li>
+					<a class="projectsTab"><b>Projects</b></a>
+				</li>
+				<li>
+					<a class="contactsTab"><b>Contact</b></a>
+				</li>
+				<li>
+					<div class="divider"></div>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<ul id="navLinks">
+				<li id="linkSubHeader">
+					<a><b>Links</b></a>
+				</li>
+				<li>
+					<a class="tooltipped" data-position="left" data-tooltip="GitHub" href="https://github.com/T-travis"
+						target="_blank"><input id="github" type="image" src="./images/icons8-github-48.png"
+							alt="Submit" /></a>
+				</li>
+				<li>
+					<a class="tooltipped" data-position="left" data-tooltip="LinkedIn"
+						href="https://www.linkedin.com/in/travistackett/" target="_blank"><input type="image"
+							src="./images/icons8-linkedin-48.png" alt="Submit" /></a>
+				</li>
+				<li id="navResume">
+					<a class="tooltipped" data-position="left" data-tooltip="Resume"
+						href="./images/travis-tackett-resume.pdf" target="_blank"><input type="image"
+							src="./images/resume-40.png" alt="Submit" /></a>
+				</li>
+			</ul>
+		</div>
+	</ul>
+
+
+	<main>
+		<div class="container">
+			<!-- HOME Tab -->
+			<div id="HOME" class="row">
+				<!-- MAIN -->
+				<div id="careerDesktopSection" class="col l12 animate hide-on-med-and-down">
+					<p id="careerDesktop1" class="center letters">Software</p>
+					<p id="careerDesktop2" class="center letters">Developer</p>
+				</div>
+
+				<!-- Mobile MAIN -->
+				<div id="mainMobile" class="row hide-on-large-only">
+					<div class="col m12 s12 center-align animate">
+						<p id="nameMobile" class="center">Travis Tackett</p>
+						<p id="careerMobile1" class="center letters">Software</p>
+						<p id="careerMobile2" class="center letters">Developer</p>
+					</div>
+				</div>
+				<!-- end Main -->
+			</div>
+			<!-- end Home Tab -->
+
+			<!-- ABOUT ME Tab -->
+			<div id="ABOUTME">
+				<div class="row">
+					<div class="col s12 hide-on-med-and-up center">
+						<h5 class="hide-on-small-only"><b>About Me</b></h5>
+						<h5 class="show-on-small-only"><b>Travis Tackett</b></h5>
+						<img class="responsive-img" src="./images/me.jpg">
+					</div>
+					<div class="col l12 m12 s12">
+						<div class="hide-on-small-only">
+							<h5><b>About Me</b></h5>
+							<img id="meImage" class="responsive-img" src="./images/me.jpg">
+						</div>
+						<blockquote>
+							<p>
+								I will be graduating this June from North Seattle College with a Bachelor of
+								Applied Science degree in Application Development. I am
+								pursuing work in Full-Stack Development, Back-End Development, Mobile Development,
+								or in the growing area of Cloud Computing. I am also interested in working with
+								nonprofits that need help with software in various capacities.
+							</p>
+						</blockquote>
+						<h5><b>Experience</b></h5>
+						<p><i>Software Development and Business Support at Semble</i></p>
+						<blockquote>
+							<p>
+								After my internship, Semble hired me to help out with various technical and business
+								related tasks. I help in managing the AWS account, working with other
+								developers to maintain Semble's software system, working on clients' listings using
+								Piranha CMS, and I help out in other business related tasks.
+							</p>
+						</blockquote>
+						<p><i>Software Development Intern at Semble</i></p>
+						<blockquote>
+							<p>
+								In the Summer of 2018 I completed an internship at Semble. My main task was developing
+								a mobile calculator application to help prospective clients understand how the loan
+								process would work using Semble's paltform. I completed and deployed the application
+								in both Android and iOS. You can get a link to the mobile app in the projects section
+								or watch a demo of it working.
+							</p>
+						</blockquote>
+						<h5><b>Find out more...</b></h5>
+						<blockquote>
+							<p>
+								Checkout my <a href="https://www.linkedin.com/in/travistackett/"
+									target="_blank">LinkedIn</a>
+								page or
+								<a href="./images/travis-tackett-resume_2.pdf" target="_blank">resume</a> for more
+								information.
+								If you want to check out some of my projects, you can view them in the projects tab with
+								links
+								to GitHub.
+							</p>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<!-- end About Me Tab -->
+
+			<!-- PROJECTS Tab -->
+			<div id="PROJECTS">
+				<div class="row">
+
+					<ul id="tabs" class="tabs">
+						<!-- alt: Tasks App -->
+						<li class="tab col l4 m4 s4"><a class="active" href="#app1">Tasks App</a></li>
+						<li class="tab col l4 m4 s4"><a href="#app2">Dictionary App</a></li>
+						<li class="tab col l4 m4 s4"><a href="#app3">Mobile App</a></li>
+					</ul>
+
+					<div id="app1">
+						<div class="col l4 m12 s12">
+							<p>This is a tasks application I designed to gain experience making a serverless RESTful API,
+								as well as gaining experience using Node.js, AWS Lambda, API Gateway, and DynamoDB.  
+								It incorporates all CRUD (create, read, update, delete) functions
+								using the HTTP methods POST, GET, PUT, and DELETE. Check out the live application or 
+								if you want to see the code or Architecture and Api Design go see the GitHub repo.
+							</p>
+							<div class="center">
+									<a class="waves-effect blue accent-3 btn" target="_blank" href="https://github.com/T-travis/tasks-app">
+										GitHub Repo
+									</a>
+									<a class="waves-effect blue accent-3 btn" target="_blank"
+										href="./tasks-app">
+										LIVE App
+									</a>
+							</div>
+						</div>
+						<div class="col l8 m12 s12">
+							<p>
+								<img class="responsive-img" src="./tasks-app/images/tasksDemo.png">
+							</p>
+						</div>
+					</div>
+
+					<div id="app2">
+						<div class="col l4 m12 s12">
+							<p>This is an English dictionary web application. I designed this application
+								to gain experience making a RESTful API, along with gaining experience using
+								Nginx, Node.js, Express.js, MongoDB, Mongoose, AWS EC2, and ended up learning quite
+								a bit more to say the least. Check out the live application, or if you want to
+								see the code or Architecture and Api Design, see the GitHub repo.
+							</p>
+							<div class="center">
+								<a class="waves-effect blue accent-3 btn" target="_blank"
+									href="https://github.com/T-travis/Dictionary-App">
+									GitHub Repo
+								</a>
+								<a class="waves-effect blue accent-3 btn" target="_blank"
+									href="http://www.brokenprogrammer.com/">
+									Live App
+								</a>
+							</div>
+						</div>
+						<div class="col l8 m12 s12">
+							<p>
+								<img class="responsive-img" src="images/dictionaryDemo.png ">
+							</p>
+						</div>
+					</div>
+
+					<div id="app3">
+						<div class="col l6 m6 s12">
+							<p>This is the mobile app I completed for my internship at Semble in both
+								Android and iOS. The app is a calculator to help prospective clients
+								understand how the loan process would work using Semble's paltform. I completed
+								and deployed the application in both Android and iOS. I used Android Studio and Java
+								for the Android version and Xcode and Swift for the iOS version.
+							</p>
+							<div id="appLinks" class="center">
+								<a href="https://play.google.com/store/apps/details?id=com.semble_calculator"
+									target="_blank">
+									<img class="responsive-img" src="./images/android-128x128.png" alt="Submit" />
+								</a>
+								<a href="https://itunes.apple.com/us/app/semble-loan-calculator/id1432890449?ls=1&mt=8"
+									target="_blank">
+									<img class="responsive-img" src="./images/ios-128x128.png" alt="Submit" />
+								</a>
+							</div>
+						</div>
+						<div id="" class="col l6 m6 s12 center">
+							<video id="videoDemo" class="responsive-video center" controls muted>
+								<source src="./video/semble-app-demo.webm" type="video/webm">
+							</video>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- end Projects Tab -->
+
+		<!-- CONTACTS Tab -->
+		<div id="CONTACTS">
+			<div class="container">
+				<div class="row">
+					<div id="contacts" class="col l12 m12 s12 center">
+						<p>Contact me at:</p>
+						<a id="emailLink" href="mailto:travisetackett@gmail.com">
+							<p>travisetackett@gmail.com</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end Contacts Tab -->
+
+
+
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="page-footer black hide-on-med-and-down">
+		<div class="container">
+			<div class="row">
+				<div id="copyright" class="col l6 right-align">
+					&#169; Travis Tackett 2019
+				</div>
+				<div class="col l6 left-align">
+					<ul id="footerList">
+						<li>
+							<a class="tooltipped" data-position="top" data-tooltip="GitHub"
+								href="https://github.com/T-travis" target="_blank"><input id="github" type="image"
+									src="./images/github.png" alt="Submit" /></a>
+						</li>
+						<li>
+							<a class="tooltipped" data-position="top" data-tooltip="LinkedIn"
+								href="https://www.linkedin.com/in/travistackett/" target="_blank"><input type="image"
+									src="./images/linkedin.png" alt="Submit" /></a>
+						</li>
+						<!-- DONT FORGET TO UPDATE RESUME! -->
+						<li>
+							<a class="tooltipped" data-position="top" data-tooltip="Resume"
+								href="./images/travis-tackett-resume_2.pdf" target="_blank"><input id="resume"
+									type="image" src="./images/resume.png" alt="Submit" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end Footer -->
+
+
+	<script src="./js/onloadSetup.js"></script>
+
+
+</body>
+
+</html>
