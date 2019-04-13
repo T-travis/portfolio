@@ -1,9 +1,3 @@
-// Initialize Side-Nav for mobile
-document.addEventListener("DOMContentLoaded", function () {
-  let elems = document.querySelectorAll(".sidenav");
-  let instances = M.Sidenav.init(elems);
-});
-
 
 // animates Main section using anime.js
 // with the help of http://tobiasahlin.com/moving-letters
@@ -32,11 +26,17 @@ function animateHome() {
 }
 
 // main
-$(window).on('load', function () {
+$(document).ready(function () {
 
-  $(document).ready(function () {
-    $('.tooltipped').tooltip();
+  $('.tooltipped').tooltip();
+
+  $('.sidenav').sidenav({draggable: true});
+
+  /*
+  $('#menu').on('click', function() {
+    $('.sidenav').sidenav('open');
   });
+  */
 
   setTimeout(function () {
     animateHome();
